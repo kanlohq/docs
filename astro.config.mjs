@@ -52,6 +52,9 @@ export default defineConfig({
           items: [{ autogenerate: { directory: "reference" } }],
         },
       ],
+      components: {
+        Footer: "./src/components/Footer.astro",
+      },
     }),
   ],
 
