@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://docs.kanlo.cc",
   integrations: [
     starlight({
       title: "My Docs",
@@ -21,7 +22,10 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/styles/global.css"],
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
+      social: [{ icon: "github", label: "GitHub", href: "https://github.com/kanlohq" }],
+      editLink: {
+        baseUrl: "https://github.com/kanlohq/docs/edit/main/",
+      },
       sidebar: [
         {
           label: "Guides",
