@@ -1,0 +1,35 @@
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: oklch(0.16 0.03 70); /* primary-foreground */
+  --sl-color-accent: oklch(0.78 0.16 70); /* primary */
+  --sl-color-accent-high: oklch(0.78 0.16 70); /* primary */
+  --sl-color-white: oklch(0.96 0.008 240); /* foreground */
+  --sl-color-gray-1: oklch(0.96 0.008 240); /* secondary-foreground */
+  --sl-color-gray-2: oklch(0.96 0.008 240); /* foreground */
+  --sl-color-gray-3: oklch(0.65 0.015 240); /* muted-foreground */
+  --sl-color-gray-4: oklch(0.65 0.015 240); /* muted-foreground */
+  --sl-color-gray-5: oklch(0.27 0.02 240); /* muted / secondary */
+  --sl-color-gray-6: oklch(0.21 0.025 240); /* card */
+  --sl-color-black: oklch(0.16 0.02 240); /* background */
+}
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: oklch(0.95 0.008 240); /* muted */
+  --sl-color-accent: oklch(0.74 0.15 70); /* primary */
+  --sl-color-accent-high: oklch(0.18 0.03 70); /* primary-foreground */
+  --sl-color-white: oklch(0.19 0.02 240); /* foreground */
+  --sl-color-gray-1: oklch(0.22 0.02 240); /* secondary-foreground */
+  --sl-color-gray-2: oklch(0.22 0.02 240); /* secondary-foreground */
+  --sl-color-gray-3: oklch(0.5 0.015 240); /* muted-foreground */
+  --sl-color-gray-4: oklch(0.5 0.015 240); /* muted-foreground */
+  --sl-color-gray-5: oklch(0.9 0.008 240); /* border */
+  --sl-color-gray-6: oklch(0.95 0.008 240); /* muted */
+  --sl-color-gray-7: oklch(0.96 0.008 240); /* secondary */
+  --sl-color-black: oklch(0.99 0.003 240); /* background */
+}
