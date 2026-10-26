@@ -1,0 +1,39 @@
+---
+title: Willkommen bei Starlight
+description: Erste Schritte mit Starlight.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: Glückwunch zum aufsetzen eines neuen Starlight Projekts!
+  image:
+    file: ../../../assets/kanlo.svg
+  actions:
+    - text: Beispiel Guide
+      link: /de/guides/example/
+      icon: right-arrow
+    - text: Lesen Sie die Starlight Doku
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Update content" icon="pencil">
+    Bearbeiten Sie `src/content/docs/index.mdx`.
+  </Card>
+  <Card title="Change page layout" icon="document">
+    Löschen Sie `template: splash` in `src/content/docs/index.mdx`, um die Seitenleiste zu sehen.
+  </Card>
+  <Card title="Add new content" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Configure your site" icon="setting">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
+  <Card title="Read the docs" icon="open-book">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card>
+</CardGrid>

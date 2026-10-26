@@ -9,8 +9,21 @@ export default defineConfig({
   site: "https://docs.kanlo.cc",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: {
+        en: "Kanlo Docs",
+        de: "Kanlo Doku",
+      },
       favicon: "/favicon.svg",
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        de: {
+          label: "Deutsch",
+        },
+      },
       head: [
         {
           tag: "link",
